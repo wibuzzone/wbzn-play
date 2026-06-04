@@ -1,0 +1,74 @@
+/* RESET DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0F172A;
+    color: #F8FAFC;
+}
+
+/* KOTAK FORM TOPUP */
+.form-card {
+    background-color: #1E293B;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.input-field {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0 1rem 0;
+    background-color: #334155;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+}
+
+.btn-kirim {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #F59E0B;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-kirim:hover {
+    background-color: #D97706;
+}
+
+/* DAFTAR NOMINAL */
+.nominal-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 1rem 0;
+}
+
+.nominal-item {
+    background-color: #334155;
+    padding: 0.7rem;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.2s;
+}
+
+.nominal-item.active {
+    border-color: #F59E0B;
+    background-color: #475569;
+}
