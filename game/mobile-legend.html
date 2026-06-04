@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topup Mobile Legends - WBZONE</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900">
+
+    <nav class="bg-gray-800 shadow-lg mb-10">
+        <div class="container mx-auto px-4 py-3">
+            <a href="../index.html" class="text-yellow-500 font-bold">← Kembali ke Beranda</a>
+            <h1 class="text-center text-2xl font-bold mt-1">⚡ WBZONE</h1>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 pb-20">
+        <div class="form-card">
+            <h2 class="text-2xl font-bold text-center mb-4">💎 Topup Mobile Legends</h2>
+
+            <!-- FORM INPUT ID & SERVER -->
+            <label>ID Akun</label>
+            <input type="text" id="user_id" class="input-field" placeholder="Contoh: 12345678">
+            
+            <label>ID Server</label>
+            <input type="text" id="zone_id" class="input-field" placeholder="Contoh: 9876">
+
+            <!-- PILIH NOMINAL DIAMOND -->
+            <h3 class="mt-4 mb-2 font-semibold">Pilih Nominal</h3>
+            <div class="nominal-grid" id="daftar-nominal">
+                <div class="nominal-item" data-harga="3000" data-kode="ml_3">3 Diamonds <br> <span class="text-xs text-gray-300">Rp 3.000</span></div>
+                <div class="nominal-item" data-harga="5000" data-kode="ml_5">5 Diamonds <br> <span class="text-xs text-gray-300">Rp 5.000</span></div>
+                <div class="nominal-item" data-harga="10000" data-kode="ml_10">12 Diamonds <br> <span class="text-xs text-gray-300">Rp 10.000</span></div>
+                <div class="nominal-item" data-harga="50000" data-kode="ml_50">70 Diamonds <br> <span class="text-xs text-gray-300">Rp 50.000</span></div>
+                <div class="nominal-item" data-harga="100000" data-kode="ml_100">140 Diamonds <br> <span class="text-xs text-gray-300">Rp 100.000</span></div>
+                <div class="nominal-item" data-harga="200000" data-kode="ml_200">280 Diamonds <br> <span class="text-xs text-gray-300">Rp 200.000</span></div>
+            </div>
+
+            <!-- TOTAL HARGA -->
+            <div class="bg-gray-700 p-3 rounded-lg my-4 text-center">
+                Total Bayar: <span class="font-bold text-yellow-500 text-lg" id="total-harga">Rp 0</span>
+            </div>
+
+            <!-- TOMBOL KIRIM KE SISTEM -->
+            <button class="btn-kirim" id="btn-bayar">Lanjut ke Pembayaran</button>
+        </div>
+    </div>
+
+    <!-- HUBUNGKAN KE SISTEM & API -->
+    <script src="../js/script.js"></script>
+    <script src="../config/api.js"></script>
+</body>
+</html>
